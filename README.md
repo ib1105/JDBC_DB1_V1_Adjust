@@ -1,5 +1,4 @@
 # JDBC_V1_Adjust
-# JDBC_V0_Understand
 
 H2 1.4.199 데이터베이스 설치
 
