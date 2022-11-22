@@ -1,4 +1,5 @@
 package hello.jdbc.repository;
+import com.zaxxer.hikari.HikariDataSource;
 import hello.jdbc.domain.Member;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
@@ -8,9 +9,13 @@ import java.util.NoSuchElementException;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
+import com.zaxxer.hikari.HikariDataSource;
+
 @Slf4j
 class MemberRepositoryV0Test {
+
     MemberRepositoryV0 repository = new MemberRepositoryV0();
+
     @Test
     void crud() throws SQLException {
         //save
